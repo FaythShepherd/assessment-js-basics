@@ -7,23 +7,12 @@ const reader = readline.createInterface({
   output: process.stdout,
 });
 
-reader.question("Please enter you password here", function(input){
-	
-	mathSymbol = tokens[0];
-	num1 = Number(tokens[1]);
+reader.question("Please enter you password here", function(password){
 
-	if (mathSymbol === "+"){
-		console.log(num1 + num2);
-  } else if (mathSymbol === "-"){
-		console.log(num1 - num2);
-  } else if (mathSymbol === "/"){
-	  	console.log(num1 / num2);
-  } else if (mathSymbol === "*"){
-	  	console.log(num1 * num2);
-  } else if (mathSymbol === "%"){
-	  	console.log(num1 % num2);
+	if (password.length >= 10){
+		console.log("Successful");
   } else {
-	  console.log("Sorry, please try again")
+      console.log("oh on, that did not work honey!")
   }
 
   	console.log
