@@ -8,7 +8,6 @@ const reader = readline.createInterface({
 });
 
 reader.question("Please enter you password here", function(input){
-	tokens = input.split(' ');
 	
 	mathSymbol = tokens[0];
 	num1 = Number(tokens[1]);
